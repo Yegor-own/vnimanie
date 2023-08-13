@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Тест Струпа</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="null.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<div class="content-title">
+				<span>Тест на внимание (тест Струпа)</span>
+				<button id="start-button" onclick="start();">Начать</button>
+				<button id="reset-button" onclick="reset();">Заново</button>
+			</div>
+			<div class="content-subtitle">
+				В данном тесте вам нужно буедет нажать на цвет, в котором написано слово.<br>
+				Будте внимательны, так как цвет и слово могут не совпадать. Выберайте цвет так быстро, как только можете.
+			</div>
+			<div class="content-word">[тут будет слово]</div>
+			<ul class="content-buttons">
+				<li class="button-color" type="button" onclick="answer('black')" id="button-black" value="black"></li>
+				<li class="button-color" type="button" onclick="answer('limegreen')" id="button-green" value="limegreen"></li>
+				<li class="button-color" type="button" onclick="answer('red')" id="button-red" value="red"></li>
+				<li class="button-color" type="button" onclick="answer('dodgerblue')" id="button-blue" value="dodgerblue"></li>
+				<li class="button-color" type="button" onclick="answer('gold')" id="button-yellow" value="gold"></li>
+			</ul>
+			<div class="content-results">
+				<span class="results-title">Ваши результаты здесь</span>
+				<ul class="results-text"></ul>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<!-- <script type="text/javascript" src="words.json"></script> -->
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

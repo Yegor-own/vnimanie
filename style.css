@@ -1,0 +1,169 @@
+.wrapper {
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+	max-width: 600px;
+	height: 100%;
+	margin: 50px auto 50px auto;
+	padding: 50px;
+	background: whitesmoke;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+/*	align-items: ceneter;*/
+	justify-content: center	;
+}
+
+@media(max-width: 425px) {
+	.content {
+		margin: 25px;
+		padding: 10px;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+}
+
+.content-title {
+	font-size: 24px;
+	text-align: center;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+
+@media(max-width: 425px) {
+	.content-title {
+		font-size: 20px;
+		line-height: 1.2;
+	}
+}
+
+.content-title button {
+	padding: 5px;
+	border-radius: 5px;
+/*	background: limegreen;*/
+	font-weight: 700;
+}
+
+#start-button {
+	background: limegreen;
+}
+
+#reset-button {
+	background: orangered;
+}
+
+.content-subtitle {
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 25px;
+	line-height: 1.2;
+}
+
+.content-word {
+	font-size: 24px;
+	text-align: center;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+
+@media(max-width: 425px) {
+	.content-subtitle {
+		font-size: 16px;
+		font-weight: 510;
+		line-height: 1.2;
+		text-align: left;
+	}
+
+	.content-word {
+		font-size: 20px;
+	}
+}
+
+.content-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10px;
+/*	justify-content: space-between;*/
+/*	max-width: 400px;*/
+}
+
+.button-color {
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+}
+
+@media(max-width: 425px) {
+	.content-buttons {
+		flex-wrap: wrap;
+		flex-direction: unset;
+	}
+}
+
+#button-black {
+	background: black;
+}
+
+#button-green {
+	background: limegreen;
+}
+
+#button-red {
+	background: red;
+
+}
+
+#button-blue {
+	background: dodgerblue;
+}
+
+#button-yellow {
+	background: gold;
+}
+
+.content-results {
+	margin-top: 40px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.results-title {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.results-text {
+	list-style: decimal;
+	margin-top: 30px;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.results-average {
+	font-weight: 700;
+}
+
+@media(max-width: 425px) {
+	.results-title {
+		font-size: 16px;
+	}
+
+	.results-average {
+		font-weight: 510;
+	}
+}
+
+@media(max-width: 320px) {
+	.results-title {
+		font-size: 14px;
+	}
+
+	.results-average {
+		font-weight: 510;
+	}
+}
